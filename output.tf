@@ -21,7 +21,7 @@ output "linux_app_output"{
   value = local.linux_app
 }
 
-output "linux_app_location"{
-  value = flatten([
-            for app in local.linux_app : app.linuxapp.location ] )
-}
+#output "linux_app_location"{
+#  value = flatten([
+#            for app in local.linux_app : app.linuxapp.location ] )
+#}
