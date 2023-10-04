@@ -14,7 +14,7 @@ output "linux_app_list_output"{
 
 output "linux_app_list_output_simple"{
   value = flatten([
-            for app in local.linux_app : ] )
+            for app in local.linux_app : app ] )
 }
 
 output "linux_app_output"{
