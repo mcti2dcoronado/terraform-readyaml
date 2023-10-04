@@ -1,7 +1,7 @@
 output "linux_app_list_output"{
     value = flatten([
       for app in local.linux_app : [
-        for linuxapps in try(app.linux_app, []) :{
+        for linuxapps in try(app.linuxapp, []) :{
           name=linuxapps.name
           resource_group_name=linuxapps.resource_group
           location=linuxapps.location
@@ -14,7 +14,7 @@ output "linux_app_list_output"{
 
 output "linux_app_list_output_simple"{
   value = flatten([
-            for app in local.linux_app : app ] )
+            for app in local.linux_app : app.linuxapp ] )
 }
 
 output "linux_app_output"{
