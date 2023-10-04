@@ -12,3 +12,7 @@ output "linux_app_list_output"{
 ])
 }
 
+output "linux_app_list_output_simple"{
+  value = local.linux_app_list
+}
+
