@@ -1,4 +1,4 @@
-linux:
+linuxapp:
   - name: secondlinuxapp
     resource_group: azureresourcegroup
     location: "West Europe"            
